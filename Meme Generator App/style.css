@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", sans-serif;
+    background: linear-gradient(135deg, #fdf0f5, #f5f7fa);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    text-align: center;
+}
+
+.app-title {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+    letter-spacing: 1px;
+}
+
+.meme-generator {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.meme-card {
+    width: 320px;
+    padding: 20px;
+    border-radius: 20px;
+    background: #f0f0f3;
+    box-shadow: 
+        10px 10px 20px #d1d1d4,
+        -10px -10px 20px #ffffff;
+
+    margin-bottom: 25px;
+}
+
+.meme-card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin: 10px 0;
+}
+
+.meme-title {
+    font-size: 1.1rem;
+    color: #444;
+}
+
+.meme-author {
+    font-size: 0.9rem;
+    color: #777;
+}
+
+.generate-meme-btn {
+    padding: 12px 28px;
+    font-size: 16px;
+    border-radius: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    color: #333;
+    cursor: pointer;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+
+.generate-meme-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+}
+
+.generate-meme-btn:active {
+    transform: scale(0.97);
+}
